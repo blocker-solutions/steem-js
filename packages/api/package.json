@@ -4,5 +4,12 @@
   "description": "steem api client",
   "main": "index.js",
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "typescript": "^2.8.3"
+  }
 }
