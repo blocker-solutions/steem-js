@@ -1,0 +1,8 @@
+{
+  "name": "@vinicius73/steem-api",
+  "version": "0.1.0",
+  "description": "steem api client",
+  "main": "index.js",
+  "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
+  "license": "MIT"
+}
