@@ -6,10 +6,9 @@
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "",
     "prepare": "yarn build"
   },
   "devDependencies": {
-    "typescript": "^2.8.3"
   }
 }

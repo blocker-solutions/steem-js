@@ -1,11 +1,11 @@
 {
-  "private": "true",
-  "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "test": "lerna run test",
-    "prepare": "lerna run prepare",
-    "clean": "rimraf packages/**/dist"
-  },
+	"private": "true",
+	"scripts": {
+		"bootstrap": "lerna bootstrap",
+		"test": "lerna run test",
+		"prepare": "lerna run prepare",
+		"clean": "rimraf packages/**/dist"
+	},
 	"devDependencies": {
 		"eslint": "^4.19.1",
 		"eslint-config-standard": "^11.0.0",
@@ -14,8 +14,7 @@
 		"eslint-plugin-promise": "^3.7.0",
 		"eslint-plugin-standard": "^3.1.0",
 		"lerna": "^2.11.0",
-		"typescript": "^2.8.3"
+		"rimraf": "^2.6.2"
 	},
-	"dependencies": {
-	}
+	"dependencies": {}
 }
