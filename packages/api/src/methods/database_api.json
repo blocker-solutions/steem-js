@@ -1,0 +1,302 @@
+[
+  {
+    "name": "find_account_recovery_requests",
+    "args": [
+      "accounts"
+    ]
+  },
+  {
+    "name": "find_accounts",
+    "args": [
+      "accounts"
+    ]
+  },
+  {
+    "name": "find_change_recovery_account_requests",
+    "args": [
+      "accounts"
+    ]
+  },
+  {
+    "name": "find_comments",
+    "args": [
+      "comments"
+    ]
+  },
+  {
+    "name": "find_decline_voting_rights_requests",
+    "args": [
+      "accounts"
+    ]
+  },
+  {
+    "name": "find_escrows",
+    "args": [
+      "from"
+    ]
+  },
+  {
+    "name": "find_limit_orders",
+    "args": [
+      "account"
+    ]
+  },
+  {
+    "name": "find_owner_histories",
+    "args": [
+      "owner"
+    ]
+  },
+  {
+    "name": "find_savings_withdrawals",
+    "args": [
+      "account"
+    ]
+  },
+  {
+    "name": "find_sbd_conversion_requests",
+    "args": [
+      "account"
+    ]
+  },
+  {
+    "name": "find_vesting_delegation_expirations",
+    "args": [
+      "account"
+    ]
+  },
+  {
+    "name": "find_vesting_delegations",
+    "args": [
+      "account"
+    ]
+  },
+  {
+    "name": "find_votes",
+    "args": [
+      "author",
+      "permlink"
+    ]
+  },
+  {
+    "name": "find_withdraw_vesting_routes",
+    "args": [
+      "account",
+      "order"
+    ]
+  },
+  {
+    "name": "find_witnesses",
+    "args": [
+      "owners"
+    ]
+  },
+  {
+    "name": "get_active_witnesses",
+    "args": []
+  },
+  {
+    "name": "get_config",
+    "args": []
+  },
+  {
+    "name": "get_current_price_feed",
+    "args": []
+  },
+  {
+    "name": "get_dynamic_global_properties",
+    "args": []
+  },
+  {
+    "name": "get_feed_history",
+    "args": []
+  },
+  {
+    "name": "get_hardfork_properties",
+    "args": []
+  },
+  {
+    "name": "get_order_book",
+    "args": [
+      "limit"
+    ]
+  },
+  {
+    "name": "get_potential_signatures",
+    "args": [
+      "trx"
+    ]
+  },
+  {
+    "name": "get_required_signatures",
+    "args": [
+      "trx",
+      "available_keys"
+    ]
+  },
+  {
+    "name": "get_reward_funds",
+    "args": []
+  },
+  {
+    "name": "get_transaction_hex",
+    "args": [
+      "trx"
+    ]
+  },
+  {
+    "name": "get_witness_schedule",
+    "args": []
+  },
+  {
+    "name": "list_account_recovery_requests",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_accounts",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_change_recovery_account_requests",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_comments",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_decline_voting_rights_requests",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_escrows",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_limit_orders",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_owner_histories",
+    "args": [
+      "start",
+      "limit"
+    ]
+  },
+  {
+    "name": "list_savings_withdrawals",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_sbd_conversion_requests",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_vesting_delegation_expirations",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_vesting_delegations",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_votes",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_withdraw_vesting_routes",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_witness_votes",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "list_witnesses",
+    "args": [
+      "start",
+      "limit",
+      "order"
+    ]
+  },
+  {
+    "name": "verify_account_authority",
+    "args": [
+      "account",
+      "signers"
+    ]
+  },
+  {
+    "name": "verify_authority",
+    "args": [
+      "trx"
+    ]
+  },
+  {
+    "name": "verify_signatures",
+    "args": [
+      "hash",
+      "signatures",
+      "required_owner",
+      "required_active",
+      "required_posting",
+      "required_other"
+    ]
+  }
+]

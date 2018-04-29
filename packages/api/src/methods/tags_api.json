@@ -1,0 +1,196 @@
+[
+  {
+    "name": "get_active_votes",
+    "args": [
+      "author",
+      "permlink"
+    ]
+  },
+  {
+    "name": "get_comment_discussions_by_payout",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_content_replies",
+    "args": [
+      "author",
+      "permlink"
+    ]
+  },
+  {
+    "name": "get_discussion",
+    "args": [
+      "author",
+      "permlink"
+    ]
+  },
+  {
+    "name": "get_discussions_by_active",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_author_before_date",
+    "args": [
+      "author",
+      "start_permlink",
+      "before_date",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_discussions_by_blog",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_cashout",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_children",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_comments",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_created",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_feed",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_hot",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_promoted",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_trending",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_discussions_by_votes",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_post_discussions_by_payout",
+    "args": [
+      "tag",
+      "limit",
+      "filter_tags",
+      "select_authors",
+      "select_tags",
+      "truncate_body"
+    ]
+  },
+  {
+    "name": "get_replies_by_last_update",
+    "args": [
+      "start_parent_author",
+      "start_permlink",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_tags_used_by_author",
+    "args": [
+      "author"
+    ]
+  },
+  {
+    "name": "get_trending_tags",
+    "args": [
+      "start_tag",
+      "limit"
+    ]
+  }
+]

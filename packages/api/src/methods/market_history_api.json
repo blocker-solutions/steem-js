@@ -1,0 +1,42 @@
+[
+  {
+    "name": "get_market_history",
+    "args": [
+      "bucket_seconds",
+      "start",
+      "end"
+    ]
+  },
+  {
+    "name": "get_market_history_buckets",
+    "args": []
+  },
+  {
+    "name": "get_order_book",
+    "args": [
+      "limit"
+    ]
+  },
+  {
+    "name": "get_recent_trades",
+    "args": [
+      "limit"
+    ]
+  },
+  {
+    "name": "get_ticker",
+    "args": []
+  },
+  {
+    "name": "get_trade_history",
+    "args": [
+      "start",
+      "end",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_volume",
+    "args": []
+  }
+]

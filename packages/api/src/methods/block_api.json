@@ -1,0 +1,14 @@
+[
+  {
+    "name": "get_block",
+    "args": [
+      "block_num"
+    ]
+  },
+  {
+    "name": "get_block_header",
+    "args": [
+      "block_num"
+    ]
+  }
+]

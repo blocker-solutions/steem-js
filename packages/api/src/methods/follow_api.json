@@ -1,0 +1,78 @@
+[
+  {
+    "name": "get_account_reputations",
+    "args": [
+      "account_lower_bound",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_blog",
+    "args": [
+      "account",
+      "start_entry_id",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_blog_authors",
+    "args": [
+      "blog_account"
+    ]
+  },
+  {
+    "name": "get_blog_entries",
+    "args": [
+      "account",
+      "start_entry_id",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_feed",
+    "args": [
+      "account",
+      "start_entry_id",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_feed_entries",
+    "args": [
+      "account",
+      "start_entry_id",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_follow_count",
+    "args": [
+      "account"
+    ]
+  },
+  {
+    "name": "get_followers",
+    "args": [
+      "account",
+      "start",
+      "type",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_following",
+    "args": [
+      "account",
+      "start",
+      "type",
+      "limit"
+    ]
+  },
+  {
+    "name": "get_reblogged_by",
+    "args": [
+      "author",
+      "permlink"
+    ]
+  }
+]

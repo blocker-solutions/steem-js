@@ -1,0 +1,22 @@
+[
+  {
+    "name": "broadcast_block",
+    "args": [
+      "block"
+    ]
+  },
+  {
+    "name": "broadcast_transaction",
+    "args": [
+      "trx",
+      "max_block_age"
+    ]
+  },
+  {
+    "name": "broadcast_transaction_synchronous",
+    "args": [
+      "trx",
+      "max_block_age"
+    ]
+  }
+]

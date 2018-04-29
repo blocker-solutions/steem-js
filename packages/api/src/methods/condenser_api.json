@@ -1,0 +1,342 @@
+[
+  {
+    "name": "broadcast_block",
+    "args": []
+  },
+  {
+    "name": "broadcast_transaction",
+    "args": []
+  },
+  {
+    "name": "broadcast_transaction_synchronous",
+    "args": []
+  },
+  {
+    "name": "get_account_bandwidth",
+    "args": []
+  },
+  {
+    "name": "get_account_count",
+    "args": []
+  },
+  {
+    "name": "get_account_history",
+    "args": []
+  },
+  {
+    "name": "get_account_references",
+    "args": []
+  },
+  {
+    "name": "get_account_reputations",
+    "args": []
+  },
+  {
+    "name": "get_account_votes",
+    "args": []
+  },
+  {
+    "name": "get_accounts",
+    "args": []
+  },
+  {
+    "name": "get_active_votes",
+    "args": []
+  },
+  {
+    "name": "get_active_witnesses",
+    "args": []
+  },
+  {
+    "name": "get_block",
+    "args": []
+  },
+  {
+    "name": "get_block_header",
+    "args": []
+  },
+  {
+    "name": "get_blog",
+    "args": []
+  },
+  {
+    "name": "get_blog_authors",
+    "args": []
+  },
+  {
+    "name": "get_blog_entries",
+    "args": []
+  },
+  {
+    "name": "get_chain_properties",
+    "args": []
+  },
+  {
+    "name": "get_comment_discussions_by_payout",
+    "args": []
+  },
+  {
+    "name": "get_config",
+    "args": []
+  },
+  {
+    "name": "get_content",
+    "args": []
+  },
+  {
+    "name": "get_content_replies",
+    "args": []
+  },
+  {
+    "name": "get_conversion_requests",
+    "args": []
+  },
+  {
+    "name": "get_current_median_history_price",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_active",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_author_before_date",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_blog",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_cashout",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_children",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_comments",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_created",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_feed",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_hot",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_promoted",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_trending",
+    "args": []
+  },
+  {
+    "name": "get_discussions_by_votes",
+    "args": []
+  },
+  {
+    "name": "get_dynamic_global_properties",
+    "args": []
+  },
+  {
+    "name": "get_escrow",
+    "args": []
+  },
+  {
+    "name": "get_expiring_vesting_delegations",
+    "args": []
+  },
+  {
+    "name": "get_feed",
+    "args": []
+  },
+  {
+    "name": "get_feed_entries",
+    "args": []
+  },
+  {
+    "name": "get_feed_history",
+    "args": []
+  },
+  {
+    "name": "get_follow_count",
+    "args": []
+  },
+  {
+    "name": "get_followers",
+    "args": []
+  },
+  {
+    "name": "get_following",
+    "args": []
+  },
+  {
+    "name": "get_hardfork_version",
+    "args": []
+  },
+  {
+    "name": "get_key_references",
+    "args": []
+  },
+  {
+    "name": "get_market_history",
+    "args": []
+  },
+  {
+    "name": "get_market_history_buckets",
+    "args": []
+  },
+  {
+    "name": "get_next_scheduled_hardfork",
+    "args": []
+  },
+  {
+    "name": "get_open_orders",
+    "args": []
+  },
+  {
+    "name": "get_ops_in_block",
+    "args": []
+  },
+  {
+    "name": "get_order_book",
+    "args": []
+  },
+  {
+    "name": "get_owner_history",
+    "args": []
+  },
+  {
+    "name": "get_post_discussions_by_payout",
+    "args": []
+  },
+  {
+    "name": "get_potential_signatures",
+    "args": []
+  },
+  {
+    "name": "get_reblogged_by",
+    "args": []
+  },
+  {
+    "name": "get_recent_trades",
+    "args": []
+  },
+  {
+    "name": "get_recovery_request",
+    "args": []
+  },
+  {
+    "name": "get_replies_by_last_update",
+    "args": []
+  },
+  {
+    "name": "get_required_signatures",
+    "args": []
+  },
+  {
+    "name": "get_reward_fund",
+    "args": []
+  },
+  {
+    "name": "get_savings_withdraw_from",
+    "args": []
+  },
+  {
+    "name": "get_savings_withdraw_to",
+    "args": []
+  },
+  {
+    "name": "get_state",
+    "args": []
+  },
+  {
+    "name": "get_tags_used_by_author",
+    "args": []
+  },
+  {
+    "name": "get_ticker",
+    "args": []
+  },
+  {
+    "name": "get_trade_history",
+    "args": []
+  },
+  {
+    "name": "get_transaction",
+    "args": []
+  },
+  {
+    "name": "get_transaction_hex",
+    "args": []
+  },
+  {
+    "name": "get_trending_tags",
+    "args": []
+  },
+  {
+    "name": "get_version",
+    "args": []
+  },
+  {
+    "name": "get_vesting_delegations",
+    "args": []
+  },
+  {
+    "name": "get_volume",
+    "args": []
+  },
+  {
+    "name": "get_withdraw_routes",
+    "args": []
+  },
+  {
+    "name": "get_witness_by_account",
+    "args": []
+  },
+  {
+    "name": "get_witness_count",
+    "args": []
+  },
+  {
+    "name": "get_witness_schedule",
+    "args": []
+  },
+  {
+    "name": "get_witnesses",
+    "args": []
+  },
+  {
+    "name": "get_witnesses_by_vote",
+    "args": []
+  },
+  {
+    "name": "lookup_account_names",
+    "args": []
+  },
+  {
+    "name": "lookup_accounts",
+    "args": []
+  },
+  {
+    "name": "lookup_witness_accounts",
+    "args": []
+  },
+  {
+    "name": "verify_account_authority",
+    "args": []
+  },
+  {
+    "name": "verify_authority",
+    "args": []
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "get_account_bandwidth",
+    "args": [
+      "account",
+      "type"
+    ]
+  },
+  {
+    "name": "get_reserve_ratio",
+    "args": []
+  }
+]

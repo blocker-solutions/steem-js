@@ -1,0 +1,8 @@
+[
+  {
+    "name": "get_key_references",
+    "args": [
+      "keys"
+    ]
+  }
+]
