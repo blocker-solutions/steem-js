@@ -6,9 +6,15 @@
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "",
+    "build": "webpack -p",
+    "build:dev": "webpack -d",
     "prepare": "yarn build"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
   }
 }
