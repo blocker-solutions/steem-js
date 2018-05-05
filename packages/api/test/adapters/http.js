@@ -31,3 +31,21 @@ test('$parsePayloadToFetchOptions', t => {
     }
   })
 })
+
+test('$processFethResponse [success]', t => {
+  const http = new HttpAdapter()
+  const resMock = {
+    ok: true,
+    json () {
+      return {
+        id: 99,
+        result: { h: true }
+      }
+    }
+  }
+
+  return http.$processFethResponse(99, resMock)
+    .then(data => {
+      t.deepEqual(data, { h: true })
+    })
+})
