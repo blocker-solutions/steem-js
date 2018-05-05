@@ -6,6 +6,7 @@ test('constructor options', t => {
   const fetch = () => {}
 
   let http
+
   http = new HttpAdapter({ fetch, uri })
 
   t.is(http.$fetch, fetch)
@@ -13,4 +14,20 @@ test('constructor options', t => {
 
   http = new HttpAdapter({ fetch })
   t.is(http.$uri, uri)
+})
+
+test('$parsePayloadToFetchOptions', t => {
+  const http = new HttpAdapter()
+
+  const payload = http.$parsePayloadToFetchOptions({ method: 'x' })
+
+  t.deepEqual(payload, {
+    body: '{"jsonrpc":"2.0","method":"x"}',
+    method: 'post',
+    mode: 'cors',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json'
+    }
+  })
 })
