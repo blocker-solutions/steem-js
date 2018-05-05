@@ -8,18 +8,26 @@
   "scripts": {
     "build": "webpack -p",
     "build:dev": "webpack -d",
-    "prepare": "yarn build"
+    "prepare": "yarn build",
+    "test": "ava -v"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
     "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   },
   "dependencies": {
     "lodash": "^4.17.10"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
   }
 }

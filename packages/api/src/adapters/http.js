@@ -18,7 +18,7 @@ class HttpAdapter extends BaseAdapter {
     const { fetch, uri } = options
 
     this.$fetch = fetch
-    this.$uri = uri
+    this.$uri = uri || 'https://api.steemit.com'
   }
   $parsePayloadToFetchOptions (payload) {
     return {
