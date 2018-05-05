@@ -1,6 +1,6 @@
 import BaseAdapter from './base'
 
-class RPCError extends Error {
+export class RPCError extends Error {
   constructor (rpcError) {
     super(rpcError.message)
     this.name = 'RPCError'
