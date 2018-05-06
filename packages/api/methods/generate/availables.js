@@ -52,7 +52,7 @@ const storeMethods = async groups => {
   const promises = keys.map(key => new Promise((resolve, reject) => {
     fs.writeFile(
       path.resolve(__dirname, `../available/${key}.json`),
-      JSON.stringify(groups[key], '', 2),
+      JSON.stringify(groups[key], null, 2),
       (err) => {
         if (err) reject(err)
         resolve({ [key]: true })
