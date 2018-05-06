@@ -35,8 +35,9 @@
     "build:pretty": "cross-env NODE_ENV=development rollup -c",
     "build:min": "cross-env NODE_ENV=production rollup -c",
     "prepare": "yarn build",
-    "test": "ava -v",
-    "test-coverage": "nyc --reporter=html --reporter=text npm run test"
+    "ava": "ava -v",
+    "test": "nyc --reporter=lcov yarn run ava",
+    "test-coverage": "nyc --reporter=html --reporter=text yarn run ava"
   },
   "devDependencies": {
     "ava": "^0.25.0",
