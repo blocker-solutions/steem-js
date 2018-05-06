@@ -19,8 +19,11 @@
   "engines": {
     "node": ">= 8"
   },
-  "main": "dist/index.node.js",
-  "browser": "dist/index.web.js",
+  "main": "dist/index.cjs.js",
+  "browser": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/ramda.umd.min.js",
+  "jsdelivr": "dist/ramda.umd.min.js",
   "files": [
     "dist/*",
     "src/*",
