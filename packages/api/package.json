@@ -1,10 +1,16 @@
 {
   "name": "@vinicius73/steem-js-api",
-  "version": "1.0.0-0",
+  "version": "1.0.1-0",
   "description": "steem api client",
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
   "license": "MIT",
-  "keywords": ["steem", "steemit", "blockchain", "blockchain", "api-client"],
+  "keywords": [
+    "steem",
+    "steemit",
+    "blockchain",
+    "blockchain",
+    "api-client"
+  ],
   "repository": "https://github.com/vinicius73/steem-js/tree/master/packages/api",
   "homepage": "https://github.com/vinicius73/steem-js/tree/master/packages/api",
   "bugs": {
