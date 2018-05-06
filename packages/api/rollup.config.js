@@ -1,5 +1,7 @@
 const uglify = require('rollup-plugin-uglify')
 const resolve = require('rollup-plugin-node-resolve')
+const babel = require('rollup-plugin-babel')
+
 const pkg = require('./package.json')
 const isProduction = process.env.NODE_ENV === 'production'
 
@@ -8,13 +10,23 @@ const banner = `// @vinicius73/steem-js-api v${pkg.version}
 // (c) 2018-${new Date().getFullYear()} Vinicius Reis
 `
 
-const configFactory = format => {
+const configFactory = (format, useBabel = true) => {
+  let fileSufix = `.${format}`
+
+  if (format !== 'es' && useBabel) {
+    fileSufix = `${fileSufix}.es5`
+  }
+
+  if (isProduction) {
+    fileSufix = `${fileSufix}.min`
+  }
+
   const config = {
     input: './src/index.js',
     output: {
       banner,
       format,
-      file: `./dist/index.${format}${isProduction ? '.min' : ''}.js`,
+      file: `./dist/index${fileSufix}.js`,
       name: 'steem_api',
       globals: 'steem_api',
       exports: 'named'
@@ -36,7 +48,18 @@ const configFactory = format => {
     )
   }
 
+  if (useBabel) {
+    config.plugins.push(babel({
+      exclude: 'node_modules/**',
+      babelrc: false,
+      plugins: ['external-helpers', 'transform-object-rest-spread'],
+      presets: ['es2015-rollup']
+    }))
+  }
+
   return config
 }
 
-module.exports = ['umd', 'amd', 'es'].map(configFactory)
+module.exports = ['umd', 'amd', 'es'].reduce((acc, format) => {
+  return [...acc, configFactory(format, true), configFactory(format, false)]
+}, [])
