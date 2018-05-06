@@ -1,4 +1,5 @@
 # @vinicius73/steem-js-api
+[![Known Vulnerabilities](https://snyk.io/test/github/vinicius73/steem-js/badge.svg?targetFile=packages%2Fapi%2Fpackage.json)](https://snyk.io/test/github/vinicius73/steem-js?targetFile=packages%2Fapi%2Fpackage.json)
 
 Modern and lightweight JavaScript library to consume the Steem API.
 
