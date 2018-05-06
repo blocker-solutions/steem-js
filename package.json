@@ -8,11 +8,6 @@
 	},
 	"devDependencies": {
 		"ava": "^0.25.0",
-		"babel-core": "^6.26.3",
-		"babel-loader": "^7.1.4",
-		"babel-plugin-transform-object-rest-spread": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
-		"babel-register": "^6.26.0",
 		"eslint": "^4.19.1",
 		"eslint-config-standard": "^11.0.0",
 		"eslint-plugin-import": "^2.11.0",
@@ -21,10 +16,6 @@
 		"eslint-plugin-standard": "^3.1.0",
 		"glob": "^7.1.2",
 		"lerna": "^2.11.0",
-		"rimraf": "^2.6.2",
-		"webpack": "^4.6.0",
-		"webpack-cli": "^2.0.15",
-		"webpack-merge": "^4.1.2",
-		"webpack-node-externals": "^1.7.2"
+		"rimraf": "^2.6.2"
 	}
 }
