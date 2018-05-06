@@ -33,6 +33,8 @@ client.tags.getTrendingTags({ limit: 2 })
   })
 ```
 
+[demo RunKit](https://runkit.com/vinicius73/vinicius73-steem-js-api)
+
 ## ApiClient
 
 *ApiClient* uses [Proxy](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Proxy) and [Reflect](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Reflect) to simplify its use.
