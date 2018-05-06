@@ -49,12 +49,12 @@ class HttpAdapter extends BaseAdapter {
 
     return Promise.resolve(res.json())
       .then(response => {
-        if (response.id !== id) {
-          return Promise.reject(new Error(`Invalid response id: ${response.id}`))
-        }
-
         if (response.error) {
           return Promise.reject(new RPCError(response.error))
+        }
+
+        if (response.id !== id) {
+          return Promise.reject(new Error(`Invalid response id: ${response.id}`))
         }
 
         return response.result
