@@ -2,16 +2,16 @@ const path = require('path')
 const nodeExternals = require('webpack-node-externals')
 const merge = require('webpack-merge')
 
-module.exports = (baseDir, config = {}) => merge({
+const factory = (baseDir, target, config = {}) => merge({
+  target,
   entry: ['./src'],
-  target: 'node',
   output: {
     path: path.resolve(baseDir, 'dist'),
     // libraryTarget: 'umd',
-    filename: 'index.js'
+    filename: `index.${target}.js`
   },
   optimization: {
-    minimize: false
+    minimize: target !== 'node'
   },
   externals: [nodeExternals()],
   module: {
@@ -21,3 +21,6 @@ module.exports = (baseDir, config = {}) => merge({
     }]
   }
 }, config)
+
+module.exports = (baseDir, config = {}) =>
+  ['node', 'web'].map(target => factory(baseDir, target, config))

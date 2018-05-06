@@ -2,9 +2,24 @@
   "name": "@vinicius73/steem-js-api",
   "version": "1.0.0-0",
   "description": "steem api client",
-  "main": "index.js",
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
   "license": "MIT",
+  "keywords": ["steem", "steemit", "blockchain", "blockchain", "api-client"],
+  "repository": "https://github.com/vinicius73/steem-js/tree/master/packages/api",
+  "homepage": "https://github.com/vinicius73/steem-js/tree/master/packages/api",
+  "bugs": {
+    "url": "https://github.com/vinicius73/steem-js/issues"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "main": "dist/index.node.js",
+  "browser": "dist/index.web.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "README.md"
+  ],
   "scripts": {
     "build": "webpack -p",
     "build:dev": "webpack -d",
