@@ -1,3 +1,4 @@
-import * as adapters from './adapters'
+import { HttpAdapter } from './adapters'
+import ApiClient from './client'
 
-export { adapters }
+export { HttpAdapter, ApiClient }
