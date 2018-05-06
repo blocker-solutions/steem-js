@@ -1,5 +1,6 @@
 const uglify = require('rollup-plugin-uglify')
 const resolve = require('rollup-plugin-node-resolve')
+// const filesize = require('rollup-plugin-filesize')
 const babel = require('rollup-plugin-babel')
 const path = require('path')
 const { curry } = require('lodash')
@@ -30,7 +31,10 @@ const uglifyPlugin = uglify({
 
 const configFactory = curry((banner, pkgName, format, useBabel = true) => {
   let fileSuffix = `.${format}`
-  const plugins = [resolve()]
+  const plugins = [
+    resolve()
+    // filesize()
+  ]
 
   if (format !== 'es' && useBabel) {
     fileSuffix = `${fileSuffix}.es5`
