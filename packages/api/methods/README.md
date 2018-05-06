@@ -15,7 +15,7 @@ get_key_references | keys | accounts
 ### Exemples
 
 ```js
-client.accountByKey.get_key_references(keys)
+client.accountByKey.get_key_references({keys})
   .then(result => {  })
 
 ```
@@ -31,10 +31,10 @@ get_block_header | block_num |
 ### Exemples
 
 ```js
-client.block.getBlockHeader(block_num)
+client.block.getBlock({block_num})
   .then(result => {  })
 
-client.block.getBlock(block_num)
+client.block.get_block_header({block_num})
   .then(result => {  })
 
 ```
@@ -133,10 +133,10 @@ verify_authority |  |
 ### Exemples
 
 ```js
-client.condenser.get_discussions_by_active()
+client.condenser.get_key_references({})
   .then(result => {  })
 
-client.condenser.getActiveVotes()
+client.condenser.get_feed({})
   .then(result => {  })
 
 ```
@@ -196,10 +196,10 @@ verify_signatures | hash, signatures, required_owner, required_active, required_
 ### Exemples
 
 ```js
-client.database.list_votes(start, limit, order)
+client.database.getCurrentPriceFeed({})
   .then(result => {  })
 
-client.database.listSbdConversionRequests(start, limit, order)
+client.database.getWitnessSchedule({})
   .then(result => {  })
 
 ```
@@ -223,10 +223,10 @@ get_reblogged_by | author, permlink | accounts
 ### Exemples
 
 ```js
-client.follow.getFollowCount(account)
+client.follow.getBlogEntries({account, start_entry_id, limit})
   .then(result => {  })
 
-client.follow.getFollowing(account, start, type, limit)
+client.follow.getBlogAuthors({blog_account})
   .then(result => {  })
 
 ```
@@ -242,10 +242,10 @@ get_signature | method | args, ret
 ### Exemples
 
 ```js
-client.jsonrpc.getSignature(method)
+client.jsonrpc.getSignature({method})
   .then(result => {  })
 
-client.jsonrpc.get_methods()
+client.jsonrpc.get_methods({})
   .then(result => {  })
 
 ```
@@ -266,10 +266,10 @@ get_volume |  | steem_volume, sbd_volume
 ### Exemples
 
 ```js
-client.marketHistory.get_recent_trades(limit)
+client.marketHistory.getTradeHistory({start, end, limit})
   .then(result => {  })
 
-client.marketHistory.get_market_history(bucket_seconds, start, end)
+client.marketHistory.get_volume({})
   .then(result => {  })
 
 ```
@@ -286,10 +286,10 @@ broadcast_transaction_synchronous | trx, max_block_age | id, block_num, trx_num,
 ### Exemples
 
 ```js
-client.networkBroadcast.broadcast_block(block)
+client.networkBroadcast.broadcast_transaction_synchronous({trx, max_block_age})
   .then(result => {  })
 
-client.networkBroadcast.broadcast_transaction(trx, max_block_age)
+client.networkBroadcast.broadcast_block({block})
   .then(result => {  })
 
 ```
@@ -323,10 +323,10 @@ get_trending_tags | start_tag, limit | tags
 ### Exemples
 
 ```js
-client.tags.get_discussions_by_votes(tag, limit, filter_tags, select_authors, select_tags, truncate_body)
+client.tags.getDiscussionsByVotes({tag, limit, filter_tags, select_authors, select_tags, truncate_body})
   .then(result => {  })
 
-client.tags.get_discussions_by_hot(tag, limit, filter_tags, select_authors, select_tags, truncate_body)
+client.tags.getCommentDiscussionsByPayout({tag, limit, filter_tags, select_authors, select_tags, truncate_body})
   .then(result => {  })
 
 ```
@@ -342,10 +342,10 @@ get_reserve_ratio |  | id, average_block_size, current_reserve_ratio, max_virtua
 ### Exemples
 
 ```js
-client.witness.get_account_bandwidth(account, type)
+client.witness.getAccountBandwidth({account, type})
   .then(result => {  })
 
-client.witness.get_reserve_ratio()
+client.witness.getReserveRatio({})
   .then(result => {  })
 
 ```
