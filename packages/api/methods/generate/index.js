@@ -1,22 +1,8 @@
-const axios = require('axios')
-const baseURL = 'https://api.steemit.com'
-const http = axios.create({ baseURL })
+const client = require('./client')
 const fs = require('fs')
 const path = require('path')
 
-const doRequest = (method, params) => http
-  .post('', { jsonrpc: '2.0', method, params })
-  .then(({ data }) => {
-    if (data.error) {
-      return Promise.reject(data.error)
-    }
-
-    if (data.result) {
-      return data.result
-    }
-
-    return data
-  })
+const doRequest = (method, params) => client.send(method, params)
 
 const groupMethods = list => {
   return list.reduce((acc, raw) => {
@@ -65,7 +51,7 @@ const storeMethods = async groups => {
   const keys = Object.keys(groups)
   const promises = keys.map(key => new Promise((resolve, reject) => {
     fs.writeFile(
-      path.resolve(__dirname, `../methods/${key}.json`),
+      path.resolve(__dirname, `../available/${key}.json`),
       JSON.stringify(groups[key], '', 2),
       (err) => {
         if (err) reject(err)
