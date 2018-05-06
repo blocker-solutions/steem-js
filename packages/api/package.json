@@ -1,6 +1,6 @@
 {
-  "name": "@vinicius73/steem-api",
-  "version": "0.1.0",
+  "name": "@vinicius73/steem-js-api",
+  "version": "1.0.0-0",
   "description": "steem api client",
   "main": "index.js",
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
@@ -20,6 +20,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
+    "node-fetch": "^2.1.2",
     "nyc": "^11.7.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
