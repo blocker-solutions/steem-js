@@ -1,7 +1,7 @@
 import { clientHandler } from './proxy'
 
 class ApiClient {
-  constructor (adapter) {
+  constructor ({ adapter }) {
     this.$adapter = adapter
     return new Proxy(this, clientHandler)
   }
