@@ -1,4 +1,5 @@
 import test from 'ava'
+import { omit } from 'lodash'
 import { HttpAdapter } from '../../src/adapters'
 import { RPCError } from '../../src/adapters/http'
 
@@ -17,6 +18,39 @@ test('constructor options', t => {
   t.is(http.$uri, uri)
 })
 
+test('send', t => {
+  const fetch = (uri, payload) => {
+    t.deepEqual(omit(JSON.parse(payload.body), ['id']), {
+      jsonrpc: '2.0',
+      method: 'a.b',
+      params: {
+        x: 99
+      }
+    })
+
+    return Promise.resolve({
+      ok: true,
+      json () {
+        return {
+          id: 78,
+          result: { k: 41 }
+        }
+      }
+    })
+  }
+
+  const http = new HttpAdapter({ fetch })
+
+  http.send({
+    id: 78,
+    method: 'a.b',
+    params: { x: 99 }
+  })
+    .then(data => {
+      t.deepEqual(data, { k: 41 })
+    })
+})
+
 test('$parsePayloadToFetchOptions', t => {
   const http = new HttpAdapter()
 
@@ -31,6 +65,28 @@ test('$parsePayloadToFetchOptions', t => {
       'Content-Type': 'application/json'
     }
   })
+})
+
+test('$sendRequest', t => {
+  const fetch = (uri, payload) => {
+    t.is(payload.body, '{"jsonrpc":"2.0","id":55}')
+    return Promise.resolve({
+      ok: true,
+      json () {
+        return {
+          id: 55,
+          result: { k: 45 }
+        }
+      }
+    })
+  }
+
+  const http = new HttpAdapter({ fetch })
+
+  http.$sendRequest({ id: 55 })
+    .then(data => {
+      t.deepEqual(data, { k: 45 })
+    })
 })
 
 test('$processFethResponse [success]', t => {
