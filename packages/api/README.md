@@ -33,9 +33,9 @@ client.tags.getTrendingTags({ limit: 2 })
   })
 ```
 
-## Send requests
+## ApiClient
 
-*@vinicius73/steem-js-api* uses [Proxy](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Proxy) and [Reflect](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Reflect) to simplify its use.
+*ApiClient* uses [Proxy](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Proxy) and [Reflect](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Reflect) to simplify its use.
 
 ### Send requests with Proxy feature
 
@@ -76,4 +76,18 @@ client.send({
   method: 'database_api.list_savings_withdrawals',
   params: { start: 10, limit: 55 }
 })
+```
+
+## Adapters
+*ApiClient* uses adapters to send requests. Currently the only available adapter is the **HttpAdapter**.
+
+### HttpAdapter
+
+The *HttpAdapter* constructor receives the function an object as an argument, within that object the *fetch* instance must be passed as argument.
+
+```js
+import fetch from 'node-fetch'
+import { HttpAdapter } from '@vinicius73/steem-js-api'
+
+const adapter = new HttpAdapter({ fetch })
 ```
