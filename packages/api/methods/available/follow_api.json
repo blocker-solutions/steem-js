@@ -4,6 +4,9 @@
     "args": [
       "account_lower_bound",
       "limit"
+    ],
+    "ret": [
+      "reputations"
     ]
   },
   {
@@ -12,12 +15,18 @@
       "account",
       "start_entry_id",
       "limit"
+    ],
+    "ret": [
+      "blog"
     ]
   },
   {
     "name": "get_blog_authors",
     "args": [
       "blog_account"
+    ],
+    "ret": [
+      "blog_authors"
     ]
   },
   {
@@ -26,6 +35,9 @@
       "account",
       "start_entry_id",
       "limit"
+    ],
+    "ret": [
+      "blog"
     ]
   },
   {
@@ -34,6 +46,9 @@
       "account",
       "start_entry_id",
       "limit"
+    ],
+    "ret": [
+      "feed"
     ]
   },
   {
@@ -42,12 +57,20 @@
       "account",
       "start_entry_id",
       "limit"
+    ],
+    "ret": [
+      "feed"
     ]
   },
   {
     "name": "get_follow_count",
     "args": [
       "account"
+    ],
+    "ret": [
+      "account",
+      "follower_count",
+      "following_count"
     ]
   },
   {
@@ -57,6 +80,9 @@
       "start",
       "type",
       "limit"
+    ],
+    "ret": [
+      "followers"
     ]
   },
   {
@@ -66,6 +92,9 @@
       "start",
       "type",
       "limit"
+    ],
+    "ret": [
+      "following"
     ]
   },
   {
@@ -73,6 +102,9 @@
     "args": [
       "author",
       "permlink"
+    ],
+    "ret": [
+      "accounts"
     ]
   }
 ]

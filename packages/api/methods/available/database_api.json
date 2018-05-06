@@ -3,11 +3,17 @@
     "name": "find_account_recovery_requests",
     "args": [
       "accounts"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
     "name": "find_accounts",
     "args": [
+      "accounts"
+    ],
+    "ret": [
       "accounts"
     ]
   },
@@ -15,11 +21,17 @@
     "name": "find_change_recovery_account_requests",
     "args": [
       "accounts"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
     "name": "find_comments",
     "args": [
+      "comments"
+    ],
+    "ret": [
       "comments"
     ]
   },
@@ -27,48 +39,72 @@
     "name": "find_decline_voting_rights_requests",
     "args": [
       "accounts"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
     "name": "find_escrows",
     "args": [
       "from"
+    ],
+    "ret": [
+      "escrows"
     ]
   },
   {
     "name": "find_limit_orders",
     "args": [
       "account"
+    ],
+    "ret": [
+      "orders"
     ]
   },
   {
     "name": "find_owner_histories",
     "args": [
       "owner"
+    ],
+    "ret": [
+      "owner_auths"
     ]
   },
   {
     "name": "find_savings_withdrawals",
     "args": [
       "account"
+    ],
+    "ret": [
+      "withdrawals"
     ]
   },
   {
     "name": "find_sbd_conversion_requests",
     "args": [
       "account"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
     "name": "find_vesting_delegation_expirations",
     "args": [
       "account"
+    ],
+    "ret": [
+      "delegations"
     ]
   },
   {
     "name": "find_vesting_delegations",
     "args": [
       "account"
+    ],
+    "ret": [
+      "delegations"
     ]
   },
   {
@@ -76,6 +112,9 @@
     "args": [
       "author",
       "permlink"
+    ],
+    "ret": [
+      "votes"
     ]
   },
   {
@@ -83,48 +122,110 @@
     "args": [
       "account",
       "order"
+    ],
+    "ret": [
+      "routes"
     ]
   },
   {
     "name": "find_witnesses",
     "args": [
       "owners"
+    ],
+    "ret": [
+      "witnesses"
     ]
   },
   {
     "name": "get_active_witnesses",
-    "args": []
+    "args": [],
+    "ret": [
+      "witnesses"
+    ]
   },
   {
     "name": "get_config",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_current_price_feed",
-    "args": []
+    "args": [],
+    "ret": [
+      "base",
+      "quote"
+    ]
   },
   {
     "name": "get_dynamic_global_properties",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "head_block_number",
+      "head_block_id",
+      "time",
+      "current_witness",
+      "total_pow",
+      "num_pow_witnesses",
+      "virtual_supply",
+      "current_supply",
+      "confidential_supply",
+      "current_sbd_supply",
+      "confidential_sbd_supply",
+      "total_vesting_fund_steem",
+      "total_vesting_shares",
+      "total_reward_fund_steem",
+      "total_reward_shares2",
+      "pending_rewarded_vesting_shares",
+      "pending_rewarded_vesting_steem",
+      "sbd_interest_rate",
+      "sbd_print_rate",
+      "maximum_block_size",
+      "current_aslot",
+      "recent_slots_filled",
+      "participation_count",
+      "last_irreversible_block_num",
+      "vote_power_reserve_rate"
+    ]
   },
   {
     "name": "get_feed_history",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "current_median_history",
+      "price_history"
+    ]
   },
   {
     "name": "get_hardfork_properties",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "processed_hardforks",
+      "last_hardfork",
+      "current_hardfork_version",
+      "next_hardfork",
+      "next_hardfork_time"
+    ]
   },
   {
     "name": "get_order_book",
     "args": [
       "limit"
+    ],
+    "ret": [
+      "asks",
+      "bids"
     ]
   },
   {
     "name": "get_potential_signatures",
     "args": [
       "trx"
+    ],
+    "ret": [
+      "keys"
     ]
   },
   {
@@ -132,21 +233,47 @@
     "args": [
       "trx",
       "available_keys"
+    ],
+    "ret": [
+      "keys"
     ]
   },
   {
     "name": "get_reward_funds",
-    "args": []
+    "args": [],
+    "ret": [
+      "funds"
+    ]
   },
   {
     "name": "get_transaction_hex",
     "args": [
       "trx"
+    ],
+    "ret": [
+      "hex"
     ]
   },
   {
     "name": "get_witness_schedule",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "current_virtual_time",
+      "next_shuffle_block_num",
+      "current_shuffled_witnesses",
+      "num_scheduled_witnesses",
+      "top19_weight",
+      "timeshare_weight",
+      "miner_weight",
+      "witness_pay_normalization_factor",
+      "median_props",
+      "majority_version",
+      "max_voted_witnesses",
+      "max_miner_witnesses",
+      "max_runner_witnesses",
+      "hardfork_required_witnesses"
+    ]
   },
   {
     "name": "list_account_recovery_requests",
@@ -154,6 +281,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
@@ -162,6 +292,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "accounts"
     ]
   },
   {
@@ -170,6 +303,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
@@ -178,6 +314,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "comments"
     ]
   },
   {
@@ -186,6 +325,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
@@ -194,6 +336,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "escrows"
     ]
   },
   {
@@ -202,6 +347,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "orders"
     ]
   },
   {
@@ -209,6 +357,9 @@
     "args": [
       "start",
       "limit"
+    ],
+    "ret": [
+      "owner_auths"
     ]
   },
   {
@@ -217,6 +368,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "withdrawals"
     ]
   },
   {
@@ -225,6 +379,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "requests"
     ]
   },
   {
@@ -233,6 +390,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "delegations"
     ]
   },
   {
@@ -241,6 +401,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "delegations"
     ]
   },
   {
@@ -249,6 +412,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "votes"
     ]
   },
   {
@@ -257,6 +423,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "routes"
     ]
   },
   {
@@ -265,6 +434,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "votes"
     ]
   },
   {
@@ -273,6 +445,9 @@
       "start",
       "limit",
       "order"
+    ],
+    "ret": [
+      "witnesses"
     ]
   },
   {
@@ -280,12 +455,18 @@
     "args": [
       "account",
       "signers"
+    ],
+    "ret": [
+      "valid"
     ]
   },
   {
     "name": "verify_authority",
     "args": [
       "trx"
+    ],
+    "ret": [
+      "valid"
     ]
   },
   {
@@ -297,6 +478,9 @@
       "required_active",
       "required_posting",
       "required_other"
+    ],
+    "ret": [
+      "valid"
     ]
   }
 ]

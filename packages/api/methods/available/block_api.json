@@ -3,12 +3,14 @@
     "name": "get_block",
     "args": [
       "block_num"
-    ]
+    ],
+    "ret": []
   },
   {
     "name": "get_block_header",
     "args": [
       "block_num"
-    ]
+    ],
+    "ret": []
   }
 ]

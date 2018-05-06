@@ -1,12 +1,17 @@
 [
   {
     "name": "get_methods",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_signature",
     "args": [
       "method"
+    ],
+    "ret": [
+      "args",
+      "ret"
     ]
   }
 ]

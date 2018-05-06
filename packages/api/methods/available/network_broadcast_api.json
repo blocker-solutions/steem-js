@@ -3,20 +3,28 @@
     "name": "broadcast_block",
     "args": [
       "block"
-    ]
+    ],
+    "ret": []
   },
   {
     "name": "broadcast_transaction",
     "args": [
       "trx",
       "max_block_age"
-    ]
+    ],
+    "ret": []
   },
   {
     "name": "broadcast_transaction_synchronous",
     "args": [
       "trx",
       "max_block_age"
+    ],
+    "ret": [
+      "id",
+      "block_num",
+      "trx_num",
+      "expired"
     ]
   }
 ]

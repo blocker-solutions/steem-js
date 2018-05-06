@@ -4,10 +4,17 @@
     "args": [
       "account",
       "type"
-    ]
+    ],
+    "ret": []
   },
   {
     "name": "get_reserve_ratio",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "average_block_size",
+      "current_reserve_ratio",
+      "max_virtual_bandwidth"
+    ]
   }
 ]

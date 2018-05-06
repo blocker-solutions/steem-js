@@ -1,342 +1,597 @@
 [
   {
     "name": "broadcast_block",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "broadcast_transaction",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "broadcast_transaction_synchronous",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "block_num",
+      "trx_num",
+      "expired"
+    ]
   },
   {
     "name": "get_account_bandwidth",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_account_count",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_account_history",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_account_references",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_account_reputations",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_account_votes",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_accounts",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_active_votes",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_active_witnesses",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_block",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_block_header",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_blog",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_blog_authors",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_blog_entries",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_chain_properties",
-    "args": []
+    "args": [],
+    "ret": [
+      "account_creation_fee",
+      "maximum_block_size",
+      "sbd_interest_rate"
+    ]
   },
   {
     "name": "get_comment_discussions_by_payout",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_config",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_content",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "author",
+      "permlink",
+      "category",
+      "parent_author",
+      "parent_permlink",
+      "title",
+      "body",
+      "json_metadata",
+      "last_update",
+      "created",
+      "active",
+      "last_payout",
+      "depth",
+      "children",
+      "net_rshares",
+      "abs_rshares",
+      "vote_rshares",
+      "children_abs_rshares",
+      "cashout_time",
+      "max_cashout_time",
+      "total_vote_weight",
+      "reward_weight",
+      "total_payout_value",
+      "curator_payout_value",
+      "author_rewards",
+      "net_votes",
+      "root_author",
+      "root_permlink",
+      "max_accepted_payout",
+      "percent_steem_dollars",
+      "allow_replies",
+      "allow_votes",
+      "allow_curation_rewards",
+      "beneficiaries",
+      "url",
+      "root_title",
+      "pending_payout_value",
+      "total_pending_payout_value",
+      "active_votes",
+      "replies",
+      "author_reputation",
+      "promoted",
+      "body_length",
+      "reblogged_by"
+    ]
   },
   {
     "name": "get_content_replies",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_conversion_requests",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_current_median_history_price",
-    "args": []
+    "args": [],
+    "ret": [
+      "base",
+      "quote"
+    ]
   },
   {
     "name": "get_discussions_by_active",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_author_before_date",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_blog",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_cashout",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_children",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_comments",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_created",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_feed",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_hot",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_promoted",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_trending",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_discussions_by_votes",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_dynamic_global_properties",
-    "args": []
+    "args": [],
+    "ret": [
+      "head_block_number",
+      "head_block_id",
+      "time",
+      "current_witness",
+      "total_pow",
+      "num_pow_witnesses",
+      "virtual_supply",
+      "current_supply",
+      "confidential_supply",
+      "current_sbd_supply",
+      "confidential_sbd_supply",
+      "total_vesting_fund_steem",
+      "total_vesting_shares",
+      "total_reward_fund_steem",
+      "total_reward_shares2",
+      "pending_rewarded_vesting_shares",
+      "pending_rewarded_vesting_steem",
+      "sbd_interest_rate",
+      "sbd_print_rate",
+      "maximum_block_size",
+      "current_aslot",
+      "recent_slots_filled",
+      "participation_count",
+      "last_irreversible_block_num",
+      "vote_power_reserve_rate",
+      "average_block_size",
+      "current_reserve_ratio",
+      "max_virtual_bandwidth"
+    ]
   },
   {
     "name": "get_escrow",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_expiring_vesting_delegations",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_feed",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_feed_entries",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_feed_history",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "current_median_history",
+      "price_history"
+    ]
   },
   {
     "name": "get_follow_count",
-    "args": []
+    "args": [],
+    "ret": [
+      "account",
+      "follower_count",
+      "following_count"
+    ]
   },
   {
     "name": "get_followers",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_following",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_hardfork_version",
-    "args": []
+    "args": [],
+    "ret": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
   },
   {
     "name": "get_key_references",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_market_history",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_market_history_buckets",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_next_scheduled_hardfork",
-    "args": []
+    "args": [],
+    "ret": [
+      "hf_version",
+      "live_time"
+    ]
   },
   {
     "name": "get_open_orders",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_ops_in_block",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_order_book",
-    "args": []
+    "args": [],
+    "ret": [
+      "bids",
+      "asks"
+    ]
   },
   {
     "name": "get_owner_history",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_post_discussions_by_payout",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_potential_signatures",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_reblogged_by",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_recent_trades",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_recovery_request",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_replies_by_last_update",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_required_signatures",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_reward_fund",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "name",
+      "reward_balance",
+      "recent_claims",
+      "last_update",
+      "content_constant",
+      "percent_curation_rewards",
+      "percent_content_rewards",
+      "author_reward_curve",
+      "curation_reward_curve"
+    ]
   },
   {
     "name": "get_savings_withdraw_from",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_savings_withdraw_to",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_state",
-    "args": []
+    "args": [],
+    "ret": [
+      "current_route",
+      "props",
+      "tag_idx",
+      "tags",
+      "content",
+      "accounts",
+      "witnesses",
+      "discussion_idx",
+      "witness_schedule",
+      "feed_price",
+      "error"
+    ]
   },
   {
     "name": "get_tags_used_by_author",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_ticker",
-    "args": []
+    "args": [],
+    "ret": [
+      "latest",
+      "lowest_ask",
+      "highest_bid",
+      "percent_change",
+      "steem_volume",
+      "sbd_volume"
+    ]
   },
   {
     "name": "get_trade_history",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_transaction",
-    "args": []
+    "args": [],
+    "ret": [
+      "ref_block_num",
+      "ref_block_prefix",
+      "expiration",
+      "operations",
+      "extensions",
+      "signatures",
+      "transaction_id",
+      "block_num",
+      "transaction_num"
+    ]
   },
   {
     "name": "get_transaction_hex",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_trending_tags",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_version",
-    "args": []
+    "args": [],
+    "ret": [
+      "blockchain_version",
+      "steem_revision",
+      "fc_revision"
+    ]
   },
   {
     "name": "get_vesting_delegations",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_volume",
-    "args": []
+    "args": [],
+    "ret": [
+      "steem_volume",
+      "sbd_volume"
+    ]
   },
   {
     "name": "get_withdraw_routes",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_witness_by_account",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_witness_count",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_witness_schedule",
-    "args": []
+    "args": [],
+    "ret": [
+      "id",
+      "current_virtual_time",
+      "next_shuffle_block_num",
+      "current_shuffled_witnesses",
+      "num_scheduled_witnesses",
+      "top19_weight",
+      "timeshare_weight",
+      "miner_weight",
+      "witness_pay_normalization_factor",
+      "median_props",
+      "majority_version",
+      "max_voted_witnesses",
+      "max_miner_witnesses",
+      "max_runner_witnesses",
+      "hardfork_required_witnesses"
+    ]
   },
   {
     "name": "get_witnesses",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "get_witnesses_by_vote",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "lookup_account_names",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "lookup_accounts",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "lookup_witness_accounts",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "verify_account_authority",
-    "args": []
+    "args": [],
+    "ret": []
   },
   {
     "name": "verify_authority",
-    "args": []
+    "args": [],
+    "ret": []
   }
 ]

@@ -5,27 +5,48 @@
       "bucket_seconds",
       "start",
       "end"
+    ],
+    "ret": [
+      "buckets"
     ]
   },
   {
     "name": "get_market_history_buckets",
-    "args": []
+    "args": [],
+    "ret": [
+      "bucket_sizes"
+    ]
   },
   {
     "name": "get_order_book",
     "args": [
       "limit"
+    ],
+    "ret": [
+      "bids",
+      "asks"
     ]
   },
   {
     "name": "get_recent_trades",
     "args": [
       "limit"
+    ],
+    "ret": [
+      "trades"
     ]
   },
   {
     "name": "get_ticker",
-    "args": []
+    "args": [],
+    "ret": [
+      "latest",
+      "lowest_ask",
+      "highest_bid",
+      "percent_change",
+      "steem_volume",
+      "sbd_volume"
+    ]
   },
   {
     "name": "get_trade_history",
@@ -33,10 +54,17 @@
       "start",
       "end",
       "limit"
+    ],
+    "ret": [
+      "trades"
     ]
   },
   {
     "name": "get_volume",
-    "args": []
+    "args": [],
+    "ret": [
+      "steem_volume",
+      "sbd_volume"
+    ]
   }
 ]

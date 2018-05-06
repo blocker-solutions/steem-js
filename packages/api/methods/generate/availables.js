@@ -28,8 +28,8 @@ const loadSignatures = (api, methods) => {
       .then(data => {
         // @TODO use ret in doc
         const args = Object.keys(data.args)
-
-        return { name, args }
+        const ret = Object.keys(data.ret || {})
+        return { name, args, ret }
       })
   })
 

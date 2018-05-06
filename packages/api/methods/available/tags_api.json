@@ -4,6 +4,9 @@
     "args": [
       "author",
       "permlink"
+    ],
+    "ret": [
+      "votes"
     ]
   },
   {
@@ -15,6 +18,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -22,6 +28,9 @@
     "args": [
       "author",
       "permlink"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -29,6 +38,53 @@
     "args": [
       "author",
       "permlink"
+    ],
+    "ret": [
+      "id",
+      "author",
+      "permlink",
+      "category",
+      "parent_author",
+      "parent_permlink",
+      "title",
+      "body",
+      "json_metadata",
+      "last_update",
+      "created",
+      "active",
+      "last_payout",
+      "depth",
+      "children",
+      "net_rshares",
+      "abs_rshares",
+      "vote_rshares",
+      "children_abs_rshares",
+      "cashout_time",
+      "max_cashout_time",
+      "total_vote_weight",
+      "reward_weight",
+      "total_payout_value",
+      "curator_payout_value",
+      "author_rewards",
+      "net_votes",
+      "root_author",
+      "root_permlink",
+      "max_accepted_payout",
+      "percent_steem_dollars",
+      "allow_replies",
+      "allow_votes",
+      "allow_curation_rewards",
+      "beneficiaries",
+      "url",
+      "root_title",
+      "pending_payout_value",
+      "total_pending_payout_value",
+      "active_votes",
+      "replies",
+      "author_reputation",
+      "promoted",
+      "body_length",
+      "reblogged_by"
     ]
   },
   {
@@ -40,6 +96,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -49,6 +108,9 @@
       "start_permlink",
       "before_date",
       "limit"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -60,6 +122,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -71,6 +136,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -82,6 +150,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -93,6 +164,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -104,6 +178,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -115,6 +192,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -126,6 +206,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -137,6 +220,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -148,6 +234,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -159,6 +248,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -170,6 +262,9 @@
       "select_authors",
       "select_tags",
       "truncate_body"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
@@ -178,12 +273,18 @@
       "start_parent_author",
       "start_permlink",
       "limit"
+    ],
+    "ret": [
+      "discussions"
     ]
   },
   {
     "name": "get_tags_used_by_author",
     "args": [
       "author"
+    ],
+    "ret": [
+      "tags"
     ]
   },
   {
@@ -191,6 +292,9 @@
     "args": [
       "start_tag",
       "limit"
+    ],
+    "ret": [
+      "tags"
     ]
   }
 ]
