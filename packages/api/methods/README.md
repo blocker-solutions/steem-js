@@ -31,10 +31,10 @@ get_block_header | block_num |
 ### Exemples
 
 ```js
-client.block.getBlock(block_num)
+client.block.getBlockHeader(block_num)
   .then(result => {  })
 
-client.block.getBlockHeader(block_num)
+client.block.getBlock(block_num)
   .then(result => {  })
 
 ```
@@ -133,10 +133,10 @@ verify_authority |  |
 ### Exemples
 
 ```js
-client.condenser.getOpsInBlock()
+client.condenser.get_discussions_by_active()
   .then(result => {  })
 
-client.condenser.get_witness_schedule()
+client.condenser.getActiveVotes()
   .then(result => {  })
 
 ```
@@ -196,10 +196,10 @@ verify_signatures | hash, signatures, required_owner, required_active, required_
 ### Exemples
 
 ```js
-client.database.listAccountRecoveryRequests(start, limit, order)
+client.database.list_votes(start, limit, order)
   .then(result => {  })
 
-client.database.find_vesting_delegation_expirations(account)
+client.database.listSbdConversionRequests(start, limit, order)
   .then(result => {  })
 
 ```
@@ -223,15 +223,15 @@ get_reblogged_by | author, permlink | accounts
 ### Exemples
 
 ```js
-client.follow.getFeed(account, start_entry_id, limit)
+client.follow.getFollowCount(account)
   .then(result => {  })
 
-client.follow.get_reblogged_by(author, permlink)
+client.follow.getFollowing(account, start, type, limit)
   .then(result => {  })
 
 ```
  
-## jsonrpc.json
+## jsonrpc
 
 METHOD | PARAMS | RETURN
 -------|--------|-------
@@ -242,10 +242,10 @@ get_signature | method | args, ret
 ### Exemples
 
 ```js
-client.jsonrpcJson.get_methods()
+client.jsonrpc.getSignature(method)
   .then(result => {  })
 
-client.jsonrpcJson.get_signature(method)
+client.jsonrpc.get_methods()
   .then(result => {  })
 
 ```
@@ -266,10 +266,10 @@ get_volume |  | steem_volume, sbd_volume
 ### Exemples
 
 ```js
-client.marketHistory.getOrderBook(limit)
+client.marketHistory.get_recent_trades(limit)
   .then(result => {  })
 
-client.marketHistory.get_market_history_buckets()
+client.marketHistory.get_market_history(bucket_seconds, start, end)
   .then(result => {  })
 
 ```
@@ -286,10 +286,10 @@ broadcast_transaction_synchronous | trx, max_block_age | id, block_num, trx_num,
 ### Exemples
 
 ```js
-client.networkBroadcast.broadcast_transaction_synchronous(trx, max_block_age)
+client.networkBroadcast.broadcast_block(block)
   .then(result => {  })
 
-client.networkBroadcast.broadcastTransaction(trx, max_block_age)
+client.networkBroadcast.broadcast_transaction(trx, max_block_age)
   .then(result => {  })
 
 ```
@@ -323,10 +323,10 @@ get_trending_tags | start_tag, limit | tags
 ### Exemples
 
 ```js
-client.tags.get_discussions_by_promoted(tag, limit, filter_tags, select_authors, select_tags, truncate_body)
+client.tags.get_discussions_by_votes(tag, limit, filter_tags, select_authors, select_tags, truncate_body)
   .then(result => {  })
 
-client.tags.getDiscussionsByCreated(tag, limit, filter_tags, select_authors, select_tags, truncate_body)
+client.tags.get_discussions_by_hot(tag, limit, filter_tags, select_authors, select_tags, truncate_body)
   .then(result => {  })
 
 ```
@@ -342,10 +342,10 @@ get_reserve_ratio |  | id, average_block_size, current_reserve_ratio, max_virtua
 ### Exemples
 
 ```js
-client.witness.getReserveRatio()
+client.witness.get_account_bandwidth(account, type)
   .then(result => {  })
 
-client.witness.getAccountBandwidth(account, type)
+client.witness.get_reserve_ratio()
   .then(result => {  })
 
 ```

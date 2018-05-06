@@ -1,4 +1,4 @@
-const { template, replace } = require('lodash')
+const { template } = require('lodash')
 const { resolve } = require('path')
 const { readdirSync, readFileSync, writeFileSync } = require('fs')
 
@@ -7,7 +7,7 @@ const isJsonFile = fileName => fileName.endsWith('.json')
 const apis = readdirSync(resolve(__dirname, '../available'))
   .filter(isJsonFile)
   .reduce((acc, file) => {
-    const key = replace(file, '_api.json', '')
+    const key = file.replace('_api', '').replace('.json', '')
     acc[key] = require(resolve(__dirname, `../available/${file}`))
     return acc
   }, {})
