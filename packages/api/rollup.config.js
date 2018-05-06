@@ -60,6 +60,6 @@ const configFactory = (format, useBabel = true) => {
   return config
 }
 
-module.exports = ['umd', 'amd', 'es'].reduce((acc, format) => {
+module.exports = ['umd', 'amd', 'es', 'cjs'].reduce((acc, format) => {
   return [...acc, configFactory(format, true), configFactory(format, false)]
 }, [])
