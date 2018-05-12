@@ -1,5 +1,5 @@
-# @vinicius73/steem-js-api
-[![npm version](https://badge.fury.io/js/%40vinicius73%2Fsteem-js-api.svg)](https://badge.fury.io/js/%40vinicius73%2Fsteem-js-api) [![Known Vulnerabilities](https://snyk.io/test/github/vinicius73/steem-js/badge.svg?targetFile=packages%2Fapi%2Fpackage.json)](https://snyk.io/test/github/vinicius73/steem-js?targetFile=packages%2Fapi%2Fpackage.json) [![Maintainability](https://api.codeclimate.com/v1/badges/dd68234bd1cd08dfa170/maintainability)](https://codeclimate.com/github/vinicius73/steem-js/maintainability)
+# @blocker/steem-api
+[![npm version](https://badge.fury.io/js/%40blocker%2Fsteem-api.svg)](https://badge.fury.io/js/%40blocker%2Fsteem-api) [![Known Vulnerabilities](https://snyk.io/test/github/vinicius73/steem-js/badge.svg?targetFile=packages%2Fapi%2Fpackage.json)](https://snyk.io/test/github/vinicius73/steem-js?targetFile=packages%2Fapi%2Fpackage.json) [![Maintainability](https://api.codeclimate.com/v1/badges/dd68234bd1cd08dfa170/maintainability)](https://codeclimate.com/github/vinicius73/steem-js/maintainability)
 
 Modern and lightweight JavaScript library to consume the Steem API.
 
@@ -8,9 +8,9 @@ Modern and lightweight JavaScript library to consume the Steem API.
 ### Install
 
 ```shell
-yarn add @vinicius73/steem-js-api node-fetch
+yarn add @blocker/steem-api node-fetch
 # or
-npm install @vinicius73/steem-js-api node-fetch
+npm install @blocker/steem-api node-fetch
 ```
 
 You can use any library that supports the [WHATWG fetch](https://fetch.spec.whatwg.org) specification.  
@@ -23,7 +23,7 @@ You can use any library that supports the [WHATWG fetch](https://fetch.spec.what
 
 ```js
 import fetch from 'node-fetch'
-import { HttpAdapter, ApiClient } from '@vinicius73/steem-js-api'
+import { HttpAdapter, ApiClient } from '@blocker/steem-api'
 
 const adapter = new HttpAdapter({ fetch })
 const client = new ApiClient({ adapter })
@@ -90,7 +90,7 @@ The *HttpAdapter* constructor receives the function an object as an argument, wi
 
 ```js
 import fetch from 'node-fetch'
-import { HttpAdapter } from '@vinicius73/steem-js-api'
+import { HttpAdapter } from '@blocker/steem-api'
 
 const adapter = new HttpAdapter({ fetch })
 ```

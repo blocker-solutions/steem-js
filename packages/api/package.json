@@ -1,5 +1,5 @@
 {
-  "name": "@vinicius73/steem-js-api",
+  "name": "@blocker/steem-api",
   "version": "1.0.4-0",
   "description": "steem api client",
   "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
@@ -11,10 +11,10 @@
     "blockchain",
     "api-client"
   ],
-  "repository": "https://github.com/vinicius73/steem-js/tree/master/packages/api",
-  "homepage": "https://github.com/vinicius73/steem-js/tree/master/packages/api",
+  "repository": "https://github.com/blocker-solutions/steem-js/tree/master/packages/api",
+  "homepage": "https://github.com/blocker-solutions/steem-js/tree/master/packages/api",
   "bugs": {
-    "url": "https://github.com/vinicius73/steem-js/issues"
+    "url": "https://github.com/blocker-solutions/steem-js/issues"
   },
   "engines": {
     "node": ">= 8"

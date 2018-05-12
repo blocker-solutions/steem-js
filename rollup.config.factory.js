@@ -7,9 +7,9 @@ const { curry } = require('lodash')
 
 const isProduction = process.env.NODE_ENV === 'production'
 const makeBanner = pkg => {
-  return `// @vinicius73/steem-js-api v${pkg.version}
-  // ${pkg.homepage}
-  // (c) 2018-${new Date().getFullYear()} Vinicius Reis
+  return `// ${pkg.name} v${pkg.version}
+// ${pkg.homepage}
+// (c) 2018-${new Date().getFullYear()} Vinicius Reis
   `
 }
 

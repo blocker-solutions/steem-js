@@ -11,4 +11,4 @@
 
 Package | Version
 --------|--------
-[@vinicius73/steem-js-api](packages/api) | [![npm version](https://badge.fury.io/js/%40vinicius73%2Fsteem-js-api.svg)](https://badge.fury.io/js/%40vinicius73%2Fsteem-js-api)
+[@blocker/steem-js-api](packages/api) | [![npm version](https://badge.fury.io/js/%40blocker%2Fsteem-api.svg)](https://badge.fury.io/js/%40blocker%2Fsteem-api)
