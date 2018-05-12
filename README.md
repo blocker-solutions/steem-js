@@ -5,3 +5,10 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vinicius73/steem-js/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/steem-js/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/vinicius73/steem-js/badges/build.png?b=master)](https://scrutinizer-ci.com/g/vinicius73/steem-js/build-status/master)  [![Known Vulnerabilities](https://snyk.io/test/github/vinicius73/steem-js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/vinicius73/steem-js?targetFile=package.json)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/dd68234bd1cd08dfa170/maintainability)](https://codeclimate.com/github/vinicius73/steem-js/maintainability)
+
+
+## Packages
+
+Package | Version
+--------|--------
+[@vinicius73/steem-js-api](packages/api) | [![npm version](https://badge.fury.io/js/%40vinicius73%2Fsteem-js-api.svg)](https://badge.fury.io/js/%40vinicius73%2Fsteem-js-api)
