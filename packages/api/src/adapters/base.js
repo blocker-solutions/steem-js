@@ -4,7 +4,7 @@ class BaseAdapter {
   $makePayload (...args) {
     if (args.length === 1) {
       const payload = args[0]
-      return payload.id ? payload : { ...payload, id: genareteId() }
+      return payload.id ? payload : Object.assign({}, payload, { id: genareteId() })
     }
 
     const id = genareteId()
