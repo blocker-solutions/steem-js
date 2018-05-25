@@ -1,3 +1,4 @@
+/* eslint-disable */
 const uglify = require('rollup-plugin-uglify')
 const resolve = require('rollup-plugin-node-resolve')
 // const filesize = require('rollup-plugin-filesize')
