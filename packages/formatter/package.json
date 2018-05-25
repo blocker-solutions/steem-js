@@ -1,6 +1,6 @@
 {
   "name": "@blocker/steem-formatter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Steem-JS Formatter Helpers.",
   "author": "Diego Hernandes <diego@hernandev.com>",
   "license": "MIT",
