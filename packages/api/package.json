@@ -22,8 +22,8 @@
   "main": "dist/index.cjs.js",
   "browser": "dist/index.umd.js",
   "module": "dist/index.es.js",
-  "unpkg": "dist/index.umd.js",
-  "jsdelivr": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.min.js",
+  "jsdelivr": "dist/index.umd.min.js",
   "files": [
     "dist/*",
     "src/*",
@@ -58,7 +58,7 @@
     "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {
-    "lodash": "^4.17.10"
+    "lodash-es": "^4.17.10"
   },
   "ava": {
     "require": [

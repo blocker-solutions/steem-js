@@ -1,4 +1,4 @@
-import { snakeCase } from 'lodash'
+import { snakeCase } from 'lodash-es'
 
 const apiHandler = {
   get: (target, prop, receiver) => {
