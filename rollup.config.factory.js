@@ -28,7 +28,10 @@ const babelPlugin = babel({
   exclude: 'node_modules/**',
   babelrc: false,
   plugins: ['external-helpers', 'transform-object-rest-spread'],
-  presets: ['es2015-rollup']
+  presets: [
+    ["env", { "modules": false, "targets": { "node": "current" } }],
+    "stage-2"
+  ]
 })
 
 const uglifyPlugin = uglify({
