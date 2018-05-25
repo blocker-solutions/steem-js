@@ -70,7 +70,7 @@ const configFactory = curry((banner, pkgName, format, useBabel = true) => {
       name: pkgName,
       globals: pkgName,
       file: `./dist/index${fileSuffix}.js`,
-      exports: 'named'
+      exports: 'auto'
     },
     external: ['lodash']
   }
