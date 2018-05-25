@@ -7,10 +7,20 @@ const path = require('path')
 const { curry } = require('lodash')
 
 const isProduction = process.env.NODE_ENV === 'production'
+
+const maintainers = [
+  'Vinicius Reis',
+  'Diego Hernandes'
+].join(', ')
+
 const makeBanner = pkg => {
+  const year = new Date().getFullYear()
+  const yearString = (year === 2018) ? '2018' : `2018-${year}`
+
   return `// ${pkg.name} v${pkg.version}
 // ${pkg.homepage}
-// (c) 2018-${new Date().getFullYear()} Vinicius Reis
+// (c) ${yearString} Blocker Solutions.
+// Maintainers: ${maintainers}
   `
 }
 
