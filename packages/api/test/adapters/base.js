@@ -1,6 +1,6 @@
 import test from 'ava'
 import BaseAdapter from '../../src/adapters/base'
-import { omit } from 'lodash'
+import { omit } from 'lodash-es'
 
 test('$makePayload two argument', t => {
   const instance = new BaseAdapter()
