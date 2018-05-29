@@ -1,7 +1,6 @@
-import * as parser from './parser'
-import sanitizer from './sanitizer'
+import * as markdown from './markdown'
+import * as sanitizer from './sanitizer'
 
 export default {
-  parser,
-  sanitizer
+  markdown, sanitizer
 }
