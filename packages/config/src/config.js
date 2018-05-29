@@ -1,5 +1,9 @@
+/**
+ * @module @blocker/steem-config
+ */
+
 // imports.
-import { get } from 'lodash-es'
+import get from 'lodash/get'
 
 // application import.
 import Application from './application'
@@ -11,7 +15,7 @@ class Config {
   /**
    * Config constructor.
    *
-   * @param {{apiURL,cache,app}} options Steem RPC api to use on requests.
+   * @param {{apiURL,cache,app}} options List of options to set.
    */
   constructor (options = { apiURL: null, cache: null, app: null }) {
     // Steem API RPC URL (https).

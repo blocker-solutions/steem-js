@@ -1,5 +1,9 @@
+/**
+ * @module @blocker/steem-config
+ */
+
 // imports.
-import { get } from 'lodash-es'
+import get from 'lodash/get'
 
 /**
  * Application class.
