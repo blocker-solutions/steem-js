@@ -1,7 +1,6 @@
 /* eslint-disable */
 const uglify = require('rollup-plugin-uglify')
 const resolve = require('rollup-plugin-node-resolve')
-// const filesize = require('rollup-plugin-filesize')
 const babel = require('rollup-plugin-babel')
 const path = require('path')
 const { curry } = require('lodash')
@@ -26,11 +25,12 @@ const makeBanner = pkg => {
 
 const babelPlugin = babel({
   exclude: 'node_modules/**',
+  // include: ['node_modules/lodash-es/**'],
   babelrc: false,
+  runtimeHelpers: true,
   plugins: ['external-helpers', 'transform-object-rest-spread'],
   presets: [
-    ["env", { "modules": false, "targets": { "node": "current" } }],
-    "stage-2"
+    ["env", { "modules": false, "targets": { "node": "8.11.2" } }],
   ]
 })
 
@@ -46,15 +46,22 @@ const uglifyPlugin = uglify({
 const configFactory = curry((banner, pkgName, format, useBabel = true) => {
   let fileSuffix = `.${format}`
   const plugins = [
-    resolve()
-    // filesize()
+    resolve({
+      module: false,
+      main: true,
+      preferBuiltins: false
+    })
   ]
 
-  if (format !== 'es' && useBabel) {
-    fileSuffix = `${fileSuffix}.es5`
-
+  if (useBabel === true) {
     plugins.push(babelPlugin)
   }
+
+  // if (format !== 'es') {
+  //   fileSuffix = `${fileSuffix}.es5`
+  //
+  //   plugins.push(babelPlugin)
+  // }
 
   if (isProduction) {
     fileSuffix = `${fileSuffix}.min`
@@ -72,7 +79,9 @@ const configFactory = curry((banner, pkgName, format, useBabel = true) => {
       file: `./dist/index${fileSuffix}.js`,
       exports: 'auto'
     },
-    external: ['lodash']
+    external(id) {
+      return id.includes('node_modules')
+    }
   }
 
   return config
@@ -83,9 +92,15 @@ const rollupFactory = (dirname, pkgName) => {
   const banner = makeBanner(pkg)
   const factory = configFactory(banner, pkgName)
 
-  return ['umd', 'amd', 'es', 'cjs'].reduce((acc, format) => {
-    return [...acc, factory(format, true), factory(format, false)]
-  }, [])
+  return [
+    factory('umd', true),
+    factory('amd', true),
+    factory('es', false),
+    factory('cjs', false)
+  ]
+  // return ['umd', 'amd', 'es', 'cjs'].reduce((acc, format) => {
+  //   return [...acc, factory(format, true), factory(format, false)]
+  // }, [])
 }
 
 module.exports = { rollupFactory }
