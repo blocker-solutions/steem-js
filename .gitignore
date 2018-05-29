@@ -1,6 +1,6 @@
 # quick local testing file.
 /sandbox.js
-
+/.ignored
 # Created by https://www.gitignore.io/api/node,webstorm
 
 ### Node ###
