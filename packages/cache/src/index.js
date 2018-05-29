@@ -1,6 +1,7 @@
 // imports.
 import Cache from './cache'
-import Storage from './storage'
 
-// export cache and storage classes.
-export { Cache, Storage }
+// export cache.
+export default Cache
+
+module.exports = Cache
