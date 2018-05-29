@@ -1,19 +1,18 @@
 {
-  "name": "@blocker/steem-api",
+  "name": "@blocker/steem-cache",
   "version": "1.2.1",
-  "description": "steem api client",
-  "author": "Vinicius Reis <luiz.vinicius73@gmail.com>",
+  "description": "Steem-JS Cache Layer.",
+  "author": "Diego Hernandes <diego@hernandev.com>",
   "license": "MIT",
   "private": false,
   "keywords": [
     "steem",
-    "steemit",
+    "cache",
     "blockchain",
-    "blockchain",
-    "api-client"
+    "helpers"
   ],
-  "repository": "https://github.com/blocker-solutions/steem-js/tree/master/packages/api",
-  "homepage": "https://github.com/blocker-solutions/steem-js/tree/master/packages/api",
+  "repository": "https://github.com/blocker-solutions/steem-js/tree/master/packages/cache",
+  "homepage": "https://github.com/blocker-solutions/steem-js/tree/master/packages/cache",
   "bugs": {
     "url": "https://github.com/blocker-solutions/steem-js/issues"
   },
@@ -45,21 +44,29 @@
     "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-lodash": "^3.3.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "cross-env": "^5.1.4",
+    "localforage": "^1.7.1",
     "node-fetch": "^2.1.2",
     "nyc": "^11.7.1",
     "rollup": "^0.58.2",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-auto-external": "^1.2.0",
     "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-filesize": "^1.5.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {
+    "localstorage-polyfill": "^1.0.1",
     "lodash": "^4.17.10",
-    "lodash-es": "^4.17.10"
+    "lodash-es": "^4.17.10",
+    "node-localstorage": "^1.3.1",
+    "ramda": "^0.25.0"
   },
   "ava": {
     "require": [

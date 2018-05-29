@@ -1,7 +1,11 @@
-// import currency from './currency'
+/**
+ * @module @blocker/steem-formatter
+ */
 
+// import currency.
 import Currency from './currency'
 
-export {
+// default export.
+export default {
   Currency
 }
