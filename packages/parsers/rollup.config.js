@@ -1,3 +1,3 @@
 const { rollupFactory } = require('../../rollup.config.factory')
 
-module.exports = rollupFactory(__dirname, 'steem_markdown')
+module.exports = rollupFactory(__dirname, 'steem_parsers')
