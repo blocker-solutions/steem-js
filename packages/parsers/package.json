@@ -1,0 +1,83 @@
+{
+  "name": "@blocker/steem-parsers",
+  "version": "1.1.0",
+  "description": "Steem-JS Parsers and Utils.",
+  "author": "Diego Hernandes <diego@hernandev.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "steem",
+    "parsers",
+    "markdown",
+    "blockchain",
+    "helpers"
+  ],
+  "repository": "https://github.com/blocker-solutions/steem-js/tree/master/packages/parsers",
+  "homepage": "https://github.com/blocker-solutions/steem-js/tree/master/packages/parsers",
+  "bugs": {
+    "url": "https://github.com/blocker-solutions/steem-js/issues"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "main": "dist/index.cjs.js",
+  "browser": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.min.js",
+  "jsdelivr": "dist/index.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "yarn run build:all",
+    "build:all": "yarn run build:pretty && yarn run build:min",
+    "build:pretty": "cross-env NODE_ENV=development rollup -c",
+    "build:min": "cross-env NODE_ENV=production rollup -c",
+    "prepare": "yarn build",
+    "ava": "ava -v",
+    "test": "nyc --reporter=lcov yarn run ava",
+    "test-coverage": "nyc --reporter=html --reporter=text yarn run ava"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "axios": "^0.18.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "cross-env": "^5.1.4",
+    "node-fetch": "^2.1.2",
+    "nyc": "^11.7.1",
+    "rollup": "^0.58.2",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-auto-external": "^1.2.0",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-bundle-worker": "^0.1.0",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-filesize": "^1.5.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "lodash": "^4.17.10",
+    "lodash-es": "^4.17.10",
+    "markdown-it": "^8.4.1",
+    "markdown-it-highlightjs": "^3.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "ramda": "^0.25.0",
+    "sanitize-html": "^1.18.2",
+    "striptags": "^3.1.1"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
