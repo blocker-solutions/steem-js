@@ -4,7 +4,9 @@
   "packages": [
     "packages/api",
     "packages/cache",
-    "packages/formatter"
+    "packages/config",
+    "packages/formatter",
+    "packages/parsers"
   ],
   "version": "1.2.1"
 }
