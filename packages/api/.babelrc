@@ -1,8 +1,7 @@
 {
-  "exclude": "node_modules/**",
-  "plugins": ["external-helpers", "transform-object-rest-spread"],
+  "ignore": ["node_modules/**"],
+  "plugins": ["transform-object-rest-spread"],
   "presets": [
-    ["env", { "modules": false, "targets": { "node": "current" } }],
-    "stage-2"
+    ["env", { "targets": { "node": "8.11.2" } }]
   ]
 }
