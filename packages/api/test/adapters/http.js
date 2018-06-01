@@ -1,5 +1,5 @@
 import test from 'ava'
-import { omit } from 'lodash-es'
+import { omit } from 'lodash'
 import { HttpAdapter } from '../../src/adapters'
 import { RPCError } from '../../src/adapters/http'
 

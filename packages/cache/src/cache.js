@@ -1,5 +1,5 @@
 // imports.
-import { get } from 'lodash-es'
+import { get } from 'lodash'
 
 // storage class import.
 import Storage from './storage'

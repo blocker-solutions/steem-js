@@ -79,9 +79,10 @@ const configFactory = curry((banner, pkgName, format, useBabel = true) => {
       file: `./dist/index${fileSuffix}.js`,
       exports: 'auto'
     },
-    external(id) {
-      return id.includes('node_modules')
-    }
+    external: [ 'lodash' ]
+    // external(id) {
+    //   return id.includes('node_modules')
+    // }
   }
 
   return config

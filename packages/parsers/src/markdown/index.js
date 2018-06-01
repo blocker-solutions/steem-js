@@ -1,5 +1,5 @@
 // imports.
-import MarkdownIt from 'markdown-it'
+const MarkdownIt = require('markdown-it')
 // markdown plugins.
 import plugins from './plugins'
 import * as sanitizer from './../sanitizer'

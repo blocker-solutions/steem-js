@@ -1,4 +1,4 @@
-import { snakeCase, endsWith } from 'lodash-es'
+import { snakeCase, endsWith } from 'lodash'
 import { factoryApiMethods } from './api'
 
 const nornalizeApiName = value => {

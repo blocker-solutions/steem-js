@@ -1,6 +1,6 @@
 import test from 'ava'
 import ApiClient from '../src/client'
-import { omit } from 'lodash-es'
+import { omit } from 'lodash'
 import { HttpAdapter } from '../src/adapters'
 
 test('proxy', t => {

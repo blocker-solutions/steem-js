@@ -1,7 +1,7 @@
 // import html sanitizer.
-import sanitizeHTML from 'sanitize-html'
+const sanitizeHTML = require('sanitize-html')
 // import stripTags.
-import stripHTMLTags from 'striptags'
+const stripHTMLTags = require('striptags')
 // import html sanitizer configuration.
 import sanitizeConfig from './sanitize-html-config'
 
