@@ -1,6 +1,6 @@
 {
   "name": "@blocker/steem-formatter",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Steem-JS Formatters.",
   "author": "Diego Hernandes <diego@hernandev.com>",
   "license": "MIT",
@@ -64,7 +64,7 @@
     "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {
-    "@blocker/steem-config": "^1.1.0",
+    "@blocker/steem-config": "^1.3.0",
     "lodash": "^4.17.10",
     "lodash-es": "^4.17.10",
     "ramda": "^0.25.0"
