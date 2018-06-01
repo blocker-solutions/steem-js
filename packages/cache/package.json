@@ -1,6 +1,6 @@
 {
   "name": "@blocker/steem-cache",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Steem-JS Cache Layer.",
   "author": "Diego Hernandes <diego@hernandev.com>",
   "license": "MIT",
