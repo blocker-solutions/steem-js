@@ -28,5 +28,5 @@ export const render = (markdown = '', sanitize = true) => {
 export const renderText = (markdown = '') => {
   return Promise.resolve(parser.render(markdown))
     .then(sanitizer.sanitize)
-    .then(sanitizer.stripTags)
+    .then(sanitizer.extractText)
 }
