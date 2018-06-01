@@ -11,4 +11,7 @@
 
 Package | Version
 --------|--------
-[@blocker/steem-js-api](packages/api) | [![npm version](https://badge.fury.io/js/%40blocker%2Fsteem-api.svg)](https://badge.fury.io/js/%40blocker%2Fsteem-api)
+[@blocker/steem-api](packages/api) | [![npm version](https://badge.fury.io/js/%40blocker%2Fsteem-api.svg)](https://badge.fury.io/js/%40blocker%2Fsteem-api)
+[@blocker/steem-cache](packages/cache) | [![npm version](https://badge.fury.io/js/%40blocker%2Fsteem-cache.svg)](https://badge.fury.io/js/%40blocker%2Fsteem-cache)
+[@blocker/steem-config](packages/config) | [![npm version](https://badge.fury.io/js/%40blocker%2Fsteem-config.svg)](https://badge.fury.io/js/%40blocker%2Fsteem-config)
+[@blocker/steem-parsers](packages/parsers) | [![npm version](https://badge.fury.io/js/%40blocker%2Fsteem-parsers.svg)](https://badge.fury.io/js/%40blocker%2Fsteem-parsers)
