@@ -1,3 +1,5 @@
+/* eslint-env node, browser */
+
 // require localStorage polyfill.
 // (for Node.js and old browsers).
 require('localstorage-polyfill')
